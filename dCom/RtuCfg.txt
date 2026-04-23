@@ -1,0 +1,10 @@
+STA 23
+TCP 33424
+
+DO_REG  1  5400  0  0  1      0  DO  @STOP      2
+DO_REG  1  5402  0  0  1      0  DO  @VentilV1  2
+DO_REG  1  5405  0  0  1      0  DO  @P1        2
+DO_REG  1  5406  0  0  1      0  DO  @P2        2
+
+IN_REG  1  5100  0  0  65535  0  AI  @L         1
+HR_INT  1  2400  0  0  65535  0  AO  @N1        1
